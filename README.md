@@ -4,7 +4,7 @@
 
 # osTicket - Ticket Lifecycle & Resolution
 
-This lab demonstrates how I worked through the full lifecycle of tickets in osTicket — from user login and ticket creation to resolution. It gave me practical experience with how tickets are handled and resolved in a real-world IT support workflow.
+This lab walks through the lifecycle of support tickets within osTicket. From ticket creation to agent login, assignment, resolution, and closure, each step mimics how an actual IT support desk would handle incoming service requests.
 
 ---
 
@@ -19,99 +19,100 @@ This lab demonstrates how I worked through the full lifecycle of tickets in osTi
 
 ## 🎯 Objective
 
-To simulate ticket creation, routing, assignment, and resolution using real-world workflows. Tasks included:
-
-- Logging in as different agents  
-- Creating and managing tickets from user accounts  
-- Applying SLAs and help topics  
-- Resolving issues in a simulated IT support environment
+To demonstrate how tickets are submitted by users, processed by support agents, and resolved using osTicket’s built-in tools such as SLAs, help topics, roles, and teams.
 
 ---
 
-## 🔐 Agent Login Screens
+## 📸 Ticket Lifecycle in Action
+
+### 📝 Step 1: A user submits a support ticket
+
+<p align="center">
+  <img src="https://github.com/Herkamal/Ticket-Lifecycle/blob/main/ticket1.png?raw=true" width="80%"/>
+</p>
+A user submits the first ticket by selecting a relevant help topic and describing their issue. This enters the ticket into the system's queue for agents to pick up and triage.
+
+---
+
+### 🔐 Step 2: John logs into the Agent Panel
+
+<p align="center">
+  <img src="https://github.com/Herkamal/Ticket-Lifecycle/blob/main/john-login.png?raw=true" width="70%"/>
+</p>
+John, one of the assigned agents, logs into the osTicket Agent Panel to begin working on open tickets in the queue.
+
+---
+
+### 🎯 Step 3: John opens and reviews Ticket #1
+
+<p align="center">
+  <img src="https://github.com/Herkamal/Ticket-Lifecycle/blob/main/john-ticket1.png?raw=true" width="80%"/>
+</p>
+John views the details of Ticket #1. He can now respond to the user, take ownership, and begin working toward a resolution.
+
+---
+
+### 🔐 Step 4: Jane logs into the Agent Panel
 
 <p align="center">
   <img src="https://github.com/Herkamal/Ticket-Lifecycle/blob/main/Jane-login.png?raw=true" width="70%"/>
 </p>
-<p align="center">
-  <img src="https://github.com/Herkamal/Ticket-Lifecycle/blob/main/john-login.png?raw=true" width="70%"/>
-</p>
-<p>
-Jane and John logged into their agent accounts to begin managing support tickets.
-</p>
+Jane, another support agent, logs in to handle a separate ticket assigned to her.
 
 ---
 
-## 🧪 Ticket Lifecycle Walkthrough
+### 🧾 Step 5: Jane reviews and resolves a banking issue
 
-### 🎫 Ticket Creation
-
-Users submitted tickets by logging in and choosing a help topic.
-
-<p align="center">
-  <img src="https://github.com/Herkamal/Ticket-Lifecycle/blob/main/create-tickets.png?raw=true" width="80%"/>
-</p>
-<p align="center">
-  <img src="https://github.com/Herkamal/Ticket-Lifecycle/blob/main/ticket1.png?raw=true" width="80%"/>
-</p>
-<p align="center">
-  <img src="https://github.com/Herkamal/Ticket-Lifecycle/blob/main/ticket2.png?raw=true" width="80%"/>
-</p>
-<p align="center">
-  <img src="https://github.com/Herkamal/Ticket-Lifecycle/blob/main/ticket3.png?raw=true" width="80%"/>
-</p>
-
-Help topics included:
-- Business Critical Outage  
-- Personal Computer Issues  
-- Equipment Reset  
-- Password Request
-
----
-
-### 🧑‍💼 Agent Assignment and View
-
-Once tickets were submitted, they appeared in the agent's dashboard for triage and response. Here are examples of tickets being handled by Jane and John:
-
-<p align="center">
-  <img src="https://github.com/Herkamal/Ticket-Lifecycle/blob/main/jane-bank.png?raw=true" width="80%"/>
-</p>
 <p align="center">
   <img src="https://github.com/Herkamal/Ticket-Lifecycle/blob/main/jane-bank-fix.png?raw=true" width="80%"/>
 </p>
+<p align="center">
+  <img src="https://github.com/Herkamal/Ticket-Lifecycle/blob/main/jane-bank.png?raw=true" width="80%"/>
+</p>
+Jane works on a ticket related to a business-critical banking issue. The screenshots show the resolution in progress and the final state of the ticket.
+
+---
+
+### 📝 Step 6: A second user ticket is submitted
+
+<p align="center">
+  <img src="https://github.com/Herkamal/Ticket-Lifecycle/blob/main/ticket2.png?raw=true" width="80%"/>
+</p>
+A new ticket enters the system — this one is categorized under a different help topic and will be routed based on department or team setup.
+
+---
+
+### 🎯 Step 7: John resolves Ticket #2
+
+<p align="center">
+  <img src="https://github.com/Herkamal/Ticket-Lifecycle/blob/main/john-ticket2-fix.png?raw=true" width="80%"/>
+</p>
+John handles the second ticket and adds internal notes or public replies as needed. Once the issue is resolved, he marks the ticket as closed.
+
+---
+
+### 📝 Step 8: A third user ticket is submitted
+
+<p align="center">
+  <img src="https://github.com/Herkamal/Ticket-Lifecycle/blob/main/ticket3.png?raw=true" width="80%"/>
+</p>
+Yet another ticket is submitted by a user. Each submission demonstrates a new use case and helps reinforce agent handling practices.
+
+---
+
+### 🎯 Step 9: John resolves Ticket #3
 
 <p align="center">
   <img src="https://github.com/Herkamal/Ticket-Lifecycle/blob/main/john-ticket3-fix.png?raw=true" width="80%"/>
 </p>
+John resolves the final ticket in the queue, demonstrating the complete cycle from login to resolution. This reinforces best practices for documenting fixes and closing tickets appropriately.
 
 ---
 
-### ⏱ SLA Application
+## ✅ Conclusion
 
-Each ticket was automatically assigned an SLA based on severity:
-- **SEV-A**: Resolve within 1 hour  
-- **SEV-B**: Resolve within 4 hours  
-- **SEV-C**: Resolve within 8 hours
-
-This helps prioritize high-impact issues first.
+Through this lab, I gained a full understanding of how tickets flow through a support system using osTicket. From multiple agent logins to help topic routing, SLAs, and resolution workflows — I was able to simulate real-world IT support desk procedures.
 
 ---
 
-### ✅ Ticket Resolution
 
-Once agents provided support, they marked tickets as resolved. Notes and responses were included in each ticket to communicate with the user and log the resolution.
-
----
-
-## 💡 Key Takeaways
-
-- Practiced the full flow of a ticket in osTicket
-- Learned how SLAs and help topics improve efficiency
-- Experienced agent roles from both Jane and John’s perspectives
-- Gained insight into working with teams, queues, and ticket resolution workflows
-
----
-
-## 📌 Final Thoughts
-
-This lab provided hands-on experience with a real-world ticketing workflow. By taking tickets from creation to resolution, I simulated exactly how IT support teams handle user requests, triage, escalation, and closure in a structured service desk system.
