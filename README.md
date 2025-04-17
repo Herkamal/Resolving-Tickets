@@ -46,7 +46,7 @@ John, one of the assigned agents, logs into the osTicket Agent Panel to begin wo
 ### 🎯 Step 3: John opens and reviews Ticket #1
 
 <p align="center">
-  <img src="https://github.com/Herkamal/Ticket-Lifecycle/blob/main/john-ticket1.png?raw=true" width="80%"/>
+  <img src="https://github.com/Herkamal/Ticket-Lifecycle/blob/main/John-ticket1.png?raw=true" width="80%"/>
 </p>
 John views the details of Ticket #1. He can now respond to the user, take ownership, and begin working toward a resolution.
 
